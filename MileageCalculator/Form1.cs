@@ -21,6 +21,8 @@ namespace MileageCalculator
         public Form1()
         {
             InitializeComponent();
+
+            calculationAmount.Text = @"$$$";
         }
 
         private void calculateButton_Click(object sender, EventArgs e)
