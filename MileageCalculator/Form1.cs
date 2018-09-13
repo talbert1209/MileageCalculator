@@ -41,5 +41,10 @@ namespace MileageCalculator
                 MessageBox.Show(@"Cannot Calculate Mileage");
             }
         }
+
+        private void DisplayMiles_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($@"{_milesTraveled} miles", @"Miles Traveled");
+        }
     }
 }

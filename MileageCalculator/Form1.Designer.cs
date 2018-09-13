@@ -35,6 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.calculationAmount = new System.Windows.Forms.Label();
             this.calculateButton = new System.Windows.Forms.Button();
+            this.DisplayMiles = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.startingMileageBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.endingMileageBox)).BeginInit();
             this.SuspendLayout();
@@ -122,7 +123,7 @@
             // 
             // calculateButton
             // 
-            this.calculateButton.Location = new System.Drawing.Point(145, 159);
+            this.calculateButton.Location = new System.Drawing.Point(31, 157);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(94, 34);
             this.calculateButton.TabIndex = 6;
@@ -130,11 +131,22 @@
             this.calculateButton.UseVisualStyleBackColor = true;
             this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
+            // DisplayMiles
+            // 
+            this.DisplayMiles.Location = new System.Drawing.Point(162, 157);
+            this.DisplayMiles.Name = "DisplayMiles";
+            this.DisplayMiles.Size = new System.Drawing.Size(103, 34);
+            this.DisplayMiles.TabIndex = 7;
+            this.DisplayMiles.Text = "Display Miles";
+            this.DisplayMiles.UseVisualStyleBackColor = true;
+            this.DisplayMiles.Click += new System.EventHandler(this.DisplayMiles_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(303, 220);
+            this.Controls.Add(this.DisplayMiles);
             this.Controls.Add(this.calculateButton);
             this.Controls.Add(this.calculationAmount);
             this.Controls.Add(this.label3);
@@ -162,6 +174,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label calculationAmount;
         private System.Windows.Forms.Button calculateButton;
+        private System.Windows.Forms.Button DisplayMiles;
     }
 }
 
